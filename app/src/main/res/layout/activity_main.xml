@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/workout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/workout_time_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/workout_time"
+            android:textSize="20sp" />
+
+        <NumberPicker
+            android:id="@+id/workout_number_picker_min"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="40dp" />
+
+        <TextView
+            android:text=":"
+            android:textSize="24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"/>
+
+        <NumberPicker
+            android:id="@+id/workout_number_picker_sec"
+            android:layout_width="70dp"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/break_layout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/break_time_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/break_time"
+            android:textSize="20sp" />
+
+        <NumberPicker
+            android:id="@+id/break_number_picker_min"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="40dp" />
+
+        <TextView
+            android:text=":"
+            android:textSize="24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"/>
+
+        <NumberPicker
+            android:id="@+id/break_number_picker_sec"
+            android:layout_width="70dp"
+            android:layout_height="90dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sets_layout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sets_time_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-100dp"
+            android:text="@string/sets"
+            android:textSize="20sp" />
+
+        <NumberPicker
+            android:id="@+id/sets_number_picker"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="40dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
